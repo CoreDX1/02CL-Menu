@@ -8,14 +8,6 @@ interface Menu {
 const NavBar = () => {
   const listMenu: Menu[] = [
     {
-      name: "Monster",
-      link: "#moster",
-    },
-    {
-      name: "Weapons",
-      link: "#weapons",
-    },
-    {
       name: "Armor",
       link: "#armor",
     },
@@ -26,7 +18,15 @@ const NavBar = () => {
     {
       name : 'Events',
       link : '#events',
-    }
+    },
+    {
+      name: "Monster",
+      link: "#moster",
+    },
+    {
+      name: "Weapons",
+      link: "#weapons",
+    },
   ];
 
   const renderMenu = (): JSX.Element[] => {
