@@ -1,4 +1,4 @@
-import { Sum } from "./Suma";
+import { Sum } from "./Button";
 import "./Item.scss";
 
 interface Prop {
