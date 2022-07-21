@@ -1,4 +1,5 @@
-import './NavBar.scss';
+import { CartWidget } from "./CartWidget";
+import "./NavBar.scss";
 
 interface Menu {
   name: string;
@@ -16,8 +17,8 @@ const NavBar = () => {
       link: "#classes",
     },
     {
-      name : 'Events',
-      link : '#events',
+      name: "Events",
+      link: "#events",
     },
     {
       name: "Monster",
@@ -44,12 +45,17 @@ const NavBar = () => {
       <section className="container">
         <header className="header">
           <nav className="navbar">
-            <h1 className="title">Wikipedia</h1>
+            <h1 className="title">Logo</h1>
             <ul className="nav">
-              <li><a className='active' href="/">Home</a></li>
+              <li>
+                <a className="active" href="/">
+                  Home
+                </a>
+              </li>
               {renderMenu()}
-              </ul>
+            </ul>
           </nav>
+          <CartWidget />
         </header>
       </section>
     </>
